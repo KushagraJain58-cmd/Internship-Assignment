@@ -1,0 +1,599 @@
+@import "./variables.css";
+
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgba(1, 130, 115, .15);
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+form.example input[type=text] {
+  float: left;
+  height: 50px;
+  margin-left: 15px;
+  font-size: 17px;
+  padding: 10px;
+  border: 1px solid grey;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 5%;
+  height: 50px;
+  background: #8c9ba7;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-left: none;
+  /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.search-container {
+  margin-top: 5px;
+  margin-left: 20px;
+
+}
+
+.search-container input[type=text] {
+  /* background: #f1f1f1; */
+  border: none;
+  height: 30px;
+  padding: 5px;
+  border-radius: .5rem;
+}
+
+.search-container button {
+  cursor: pointer;
+  height: 31px;
+  border: none;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.search-container button:hover {
+  background: #c7dbec;
+}
+
+.to {
+  height: 50px;
+  width: 80%;
+  margin-left: 20px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.middle {
+  height: 300px;
+  width: 80%;
+  margin-left: 20px;
+  margin-top: 10px;
+  ;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+textarea {
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  display: block;
+  width: 95%;
+  height: 250px;
+  line-height: 1.5;
+  border-radius: 5px;
+  position: relative;
+  left: 5px;
+  top: 25px;
+}
+
+.to1 {
+  font-size: large;
+  font-family: serif;
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+
+.placing {
+  position: relative;
+  right: 190px;
+  top: 5px;
+}
+
+.placing input[type=text] {
+  background: #f1f1f1;
+}
+
+.sendmd {
+  margin-top: 50px;
+  margin-left: 25px;
+
+}
+
+/* *************************************** */
+/* *************************************** */
+
+/* VMS TASKS */
+
+/* *************************************** */
+/* *************************************** */
+.date {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.date label {
+  margin-top: 44px;
+  display: inline-block;
+}
+
+.date_box {
+  width: 207px;
+  border-radius: 5px;
+  margin-bottom: 64px;
+  padding: .2rem .2rem;
+}
+
+/* .text{
+  background-color: #c2cfe0;
+} */
+.task {
+  margin-right: 8px;
+  margin-left: 8px;
+  background: #fff;
+  border-radius: 11px;
+  height: fit-content;
+}
+
+.task h1 {
+  font-size: 2.0rem;
+  margin: 13px;
+  color: var(--grey1);
+  padding: .5rem 0;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+@media(max-width: 1024px) {
+  #task4 {
+    /* margin-top: 50px; */
+    width: 120px;
+  }
+
+  #task4 h1 {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word
+  }
+}
+
+#myForm {
+  display: none;
+}
+
+
+/* *************************************** */
+/* *************************************** */
+
+/* HR DASHBOARD */
+
+/* *************************************** */
+/* *************************************** */
+
+
+.size {
+  margin-bottom: 30px;
+}
+
+/* todolist */
+.wrapper {
+  background: #fff;
+  /* max-width: 400px; */
+  width: 100%;
+  /* margin: 0.2% 1.5%; */
+  padding: 25px;
+  border-radius: 3px;
+
+}
+
+.wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.wrapper .todoField {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.todoField input {
+  width: 89%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.todoField input:focus {
+  border-color: rgb(3, 187, 165);
+}
+
+.todoField button {
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  background: rgb(3, 187, 165);
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.todoField button:hover,
+.footer button:hover {
+  background: rgb(1, 124, 110);
+}
+
+.todoField button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.todoList li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.todoList li .icon {
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todoList li:hover .icon {
+  right: 0px;
+}
+
+.wrapper .footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer button {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: rgb(3, 187, 165);
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* *************************************** */
+/* *************************************** */
+
+/* HR Promotion page CSS Starts From Here */
+
+/* *************************************** */
+/* *************************************** */
+#promolink {
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #0d96e7;
+}
+
+#promotionh1 {
+  color: #0d96e7;
+}
+
+.ravi {
+  background: white;
+}
+
+.ravi,
+th,
+td {
+  text-align: center;
+  padding: 5px
+}
+
+
+/* css for add promotion page */
+
+#addForm {
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+  width: 75%;
+  /* content: fit; */
+  align-items: center;
+  /* margin-left: 5rem; */
+  background-color: white;
+}
+
+#addForm h1 {
+  padding-top: 1rem;
+  margin-top: 2.4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-center {
+  /* display:grid; */
+  margin-top: 1rem;
+  background-color: rgba(224, 245, 235, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.sp1 {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.jobData {
+  margin-top: 1.5rem;
+}
+
+.row {
+  text-align: left;
+  padding-left: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+}
+
+#depName {
+  margin-left: 0.1rem;
+}
+
+.formpage h4 {
+  font-weight: 300;
+  margin-bottom: 4%;
+  text-decoration: 1px underline;
+  color: #818181;
+}
+
+/* .jobData h4{
+  text-align: center;
+  
+ } */
+
+#justification {
+  text-align: left;
+}
+
+.sp2 {
+  padding-left: 1rem;
+}
+
+.sp3 {
+  padding-left: 2rem;
+}
+
+#formSubmitBtn {
+  cursor: pointer;
+  border: none;
+  padding: 2%;
+  border-radius: .3rem;
+  background: #4091d8;
+  margin-top: 6%;
+  width: 30%;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 4%;
+}
+
+.jobData .row label {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+}
+
+.jobData .row input {
+  /* display: inline-block; */
+  width: 50%;
+  padding: 0.2%;
+}
+
+select {
+  width: 50%;
+  padding: 0.2%;
+}
+
+.justification .row label {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+}
+
+.justification .row input {
+  /* display: inline-block; */
+  width: 50%;
+  padding: 0.2%;
+}
+
+.Supervision .row label {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+}
+
+.Supervision .row input {
+  width: 50%;
+  padding: 0, 2%;
+  height: auto;
+}
+
+.approval .row label {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+}
+
+.approval .row input {
+  width: 50%;
+  padding: 0, 2%;
+  height: auto;
+}
+
+
+#formSubmitBtn:hover {
+  background: #288be2;
+}
+
+@media(max-width:1110px) {}
+
+@media(max-width:768px) {
+  label {
+    width: auto;
+  }
+
+  select {
+    width: auto;
+  }
+
+  input {
+    width: auto;
+  }
+}
+
+/*  */
+/* css for emp-details of by employee id */
+/*  */
+#mainBox {
+  background-color: white;
+}
+
+#employee_details img {
+  width: 20%;
+  height: 90px;
+  margin-bottom: 1rem;
+}
+
+#row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#row1 p {
+  margin: 0px;
+}
+
+/* #details .col-md-8{
+  text-align: center;
+} */
+.det {
+  display: inline-block;
+  text-align: right;
+  font-weight: 300;
+}
+
+.desp {
+  width: 60%;
+  text-align: left;
+  padding-left: 3%;
+}
+
+
+/*
+#employee_details label{
+  margin: 1rem;
+}
+#employee_details input{
+  height: 2.5rem;
+  margin: 0.6rem;
+} */
